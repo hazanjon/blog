@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/matthodan/jekyll-asset-pipeline.git
+  revision: b8c6e246aeefb649956ba2c0fa0bd9be38b64453
+  specs:
+    jekyll-asset-pipeline (0.1.5)
+      jekyll (>= 0.12)
+      liquid (~> 2.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -12,9 +20,6 @@ GEM
       liquid (~> 2.3)
       maruku (~> 0.5)
       pygments.rb (~> 0.3.2)
-    jekyll-asset-pipeline (0.1.6)
-      jekyll (~> 0.12)
-      liquid (~> 2.4)
     kramdown (0.14.2)
     liquid (2.5.3)
     maruku (0.7.0)
@@ -22,6 +27,7 @@ GEM
     pygments.rb (0.3.7)
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.1.0)
+    redcarpet (3.0.0)
     sass (3.2.12)
     yajl-ruby (1.1.0)
 
@@ -30,5 +36,6 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  jekyll-asset-pipeline
+  jekyll-asset-pipeline!
+  redcarpet
   sass
