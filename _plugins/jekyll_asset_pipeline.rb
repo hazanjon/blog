@@ -5,7 +5,7 @@ module JekyllAssetPipeline
     require 'sass'
 
     def self.filetype
-      '.scss'
+      '.sass'
     end
 
     def convert

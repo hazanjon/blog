@@ -11,13 +11,15 @@
         {% css_asset_tag global %}
         - /_assets/default.sass
         {% endcss_asset_tag %}
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
     </head>
     <body>
 
         <div class="site">
           <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
+            <h1 class="title"><a href="/">Demonic.me</a></h1>
+            <a class="extra" href="/">Blog</a>
+            <a class="extra" href="/cv.html">CV</a>
           </div>
 
           {{ content }}
@@ -25,15 +27,15 @@
           <div class="footer">
             <div class="contact">
               <p>
-                Jon Hazan<br />
-                Senior Software Engineer<br />
-                hazanjon@gmail.com
+                {{ site.data.my_details.me.firstname }} {{ site.data.my_details.me.lastname }}<br />
+                {{ site.data.my_details.employment[0].job }}<br />
+                {{ site.data.my_details.me.email }}
               </p>
             </div>
             <div class="contact">
               <p>
-                <a href="https://github.com/hazanjon">github.com/hazanjon</a><br />
-                <a href="https://twitter.com/hazanjon">twitter.com/hazanjon</a><br />
+                <a href="https://github.com/{{ site.data.my_details.me.github }}">github.com/{{ site.data.my_details.me.github }}</a><br />
+                <a href="https://twitter.com/{{ site.data.my_details.me.twitter }}">twitter.com/{{ site.data.my_details.me.twitter }}</a><br />
               </p>
             </div>
           </div>

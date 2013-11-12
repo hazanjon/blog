@@ -1,0 +1,40 @@
+---
+layout: default
+title: CV
+---
+
+<div id="cv">
+	<div class="my_details">
+  		{{ site.data.my_details.me.firstname }} {{ site.data.my_details.me.lastname }}: CV<br />
+  		{{ site.data.my_details.me.address }}<br />
+  		{{ site.data.my_details.me.email }}, @{{ site.data.my_details.me.twitter }}<br />
+	</div>
+	<div class="employment">
+    	{% for job in site.data.my_details.employment %}
+    		
+    		{% if forloop.first %}
+    			<h2>Current Employment</h2>
+    		{% endif %}
+	    	
+	    	<div class="job">
+		  		<div class="job-title">{{ job.job }}</div>
+		  		<div class="job-location">
+		  			{{ job.place }}, {{ job.location }}
+		  			<br />
+		  			{{ job.date }}
+		  		</div>
+		  		<div class="job-details">
+			  		<ul>
+	    				{% for point in job.points %}
+	    					<li>{{ point }}</li>
+		    			{% endfor %}
+			  		</ul>
+			  	</div>
+		  	</div>
+
+    		{% if forloop.first %}
+    			<h2>Employment History</h2>
+    		{% endif %}
+	    {% endfor %}
+	</div>
+</div>
