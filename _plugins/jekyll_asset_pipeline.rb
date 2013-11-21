@@ -5,11 +5,11 @@ module JekyllAssetPipeline
     require 'sass'
 
     def self.filetype
-      '.sass'
+      '.scss'
     end
 
     def convert
-      return Sass::Engine.new(@content, syntax: :scss).render
+      return Sass::Engine.new(@content, syntax: :scss, load_paths: ['_assets']).render
     end
   end
 end
