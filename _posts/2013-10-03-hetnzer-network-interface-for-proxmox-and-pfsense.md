@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Hetnzer network Interface settings for Proxmox and pfSense"
+title:  "Hetnzer Network Interface settings for Proxmox and pfSense"
 date:   2013-10-03 20:00:00
 categories: 
 ---
