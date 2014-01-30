@@ -33,6 +33,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 );
   width: 100%;
   display: inline-block;
+  min-height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -119,7 +120,7 @@ ul.posts {
 .site .footer {
   font-size: 80%;
   color: #666;
-  border-top: 4px solid #eee;
+  border-top: 1px solid #ccc;
   margin-top: 2em;
   overflow: hidden;
 }
@@ -141,6 +142,18 @@ ul.posts {
 
 .site .footer .rss img {
   border: 0;
+}
+
+/*****************************************************************************/
+/*
+/* Embeds
+/*
+/*****************************************************************************/
+
+.gist {
+  .line-data {
+    width: 100%;
+  } 
 }
 
 /*****************************************************************************/

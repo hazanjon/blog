@@ -17,14 +17,14 @@
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
           })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-          ga('create', 'UA-46275463-1', 'demonic.me');
+          ga('create', '{{ site.analytics_code }}', '{{ site.url }}');
           ga('send', 'pageview');
         </script>
     </head>
     <body><div class="background-gradient">
         <div class="site">
           <div class="header">
-            <h1 class="title"><a href="/">Demonic.me</a></h1>
+            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
             <a class="extra" href="/">Blog</a>
             <a class="extra" href="/cv.html">CV</a>
           </div>
