@@ -9,7 +9,7 @@ After the shock of Zerigo's price 'updates' I have now migrated all my DNS hosti
 
 So far I have found Route 53 incredibly easy to setup and use. However the one feature that was missing was the ability to dynamically update one of my domains to my home IP. Most of the time my IP stays unchanged but occasionally BT will change my IP several times in one day.
 
-A did a bit of searching and eventually found [https://github.com/alessioalex/dynroute](Dynroute) by [https://github.com/alessioalex](Alexandru Vladutu). This has turned out to be an absolute godsend! Dynroute is written in NodeJS and can be installed easily using npm:
+A did a bit of searching and eventually found [Dynroute](https://github.com/alessioalex/dynroute) by [Alexandru Vladutu](https://github.com/alessioalex). This has turned out to be an absolute godsend! Dynroute is written in NodeJS and can be installed easily using npm:
 
 {% terminal %}
 $ npm install -g dynroute
