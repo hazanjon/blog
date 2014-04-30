@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Update Amazon Route 53 dynamically using Dynroute"
-date:   2014-01-20 23:00:00
+date:   2014-01-25 23:00:00
 categories: 
 ---
 
