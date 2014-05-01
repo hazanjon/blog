@@ -9,18 +9,21 @@ For good or bad I have decided to migrate my existing Hetzner dedicated server t
 
 Since I'm getting to start from scratch Im going to correct a few things I mis-setup last time, The first being to turn off the software RAID and add both disks to LVM for a single useable 5.5TB volume. I realise that most would recommend against this as it leaves me open to hardware failure, however this isnt a production server and the entire thing will be backed up to a RAID5 NAS.
 
-Rambling asside the first job was to ssh into the Hetzner rescue system and install ProxMox.
+Rambling aside the first job was to ssh into the Hetzner rescue system and run the system installer.
 
 {% terminal %}
 $ installimage
 {% endterminal %}
 
-Select Virtualization from the list and then the version of ProxMox (I chose ProxMox - Wheezy)
+Select Virtualization from the list
 
 ![installimage main screen]({{!site_url}}/uploads/installimage-main.png)
+
+Then select the version of Proxmox (I chose Proxmox - Wheezy)
+
 ![installimage main screen]({{!site_url}}/uploads/installimage-virtualization.png)
 
-Once ProxMox has been selected you will need to edit the config script to turn off software raid and use LVM rather than the default partitions. Change your config script to look like this:
+Once Proxmox has been selected you will need to edit the config script to turn off software raid and use LVM rather than the default partitions. Change your config script to look like this:
 
 ```
 #
@@ -80,10 +83,17 @@ $ gdisk /dev/sdb
 Now we just want to add the new space to LVM
 
 {% terminal %}
-$ pvcreate /dev/sdb1 #Add a new Physical Volume to LVM
-$ vgextend vg0 /dev/sdb1 #Extend teh Volume Group onto the new Phiyscal Volume
-$ lvextend -l +100%FREE /dev/vg0/root #Add the new free space to our root Logical Volume
-$ resize2fs /dev/mapper/vg0-root #Extend the file system to the new space
+#Add a new Physical Volume to LVM
+$ pvcreate /dev/sdb1 
+
+#Extend the Volume Group onto the new Phiyscal Volume
+$ vgextend vg0 /dev/sdb1 
+
+#Add the new free space to our root Logical Volume
+$ lvextend -l +100%FREE /dev/vg0/root 
+
+#Extend the file system to the new space
+$ resize2fs /dev/mapper/vg0-root 
 {% endterminal %}
 
 Success!
