@@ -1,7 +1,7 @@
-require 'jekyll_asset_pipeline'
+require 'japr'
 
-module JekyllAssetPipeline
-  class SassConverter < JekyllAssetPipeline::Converter
+module JAPR
+  class SassConverter < JAPR::Converter
     require 'sass'
 
     def self.filetype
