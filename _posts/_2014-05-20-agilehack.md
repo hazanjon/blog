@@ -11,4 +11,13 @@ Location: [Shoreditch Village Hall](http://shoreditchworks.com/), Hoxton Square,
 
 Project: Super Robot Panic Attack Mission Control
 
-Prizes: A trip to Italy to see the Dquid team and drive a ferrari, A teebusters tshirt
+Prizes: 
+
+Dquid Sponsor Prize: A trip to Italy to see the Dquid team and drive a Ferrari
+Geek of the Day: An awesome Teebusters t-shirt
+
+Run By: WEChangeIt
+
+About
+
+The theme of the weekend was the agile development cycle. As such ...
