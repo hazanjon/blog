@@ -35,8 +35,8 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  #- title: Theme Setup
-  #  url: /theme-setup
+  - title: CV
+    url: /cv
   #- title: External Link
   #  url: http://mademistakes.com
   #  external: true

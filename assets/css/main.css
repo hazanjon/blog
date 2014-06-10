@@ -1613,6 +1613,11 @@ svg:not(:root) {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
 }
 
+.dl-menuwrapper .dl-submenu .author-photo {
+  padding: 15px 20px 0;
+  border-radius: 50%;
+}
+
 .dl-menuwrapper li .dl-submenu {
   display: none;
 }
