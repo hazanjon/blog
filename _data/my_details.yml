@@ -14,7 +14,7 @@ employment:
     - place: Helastel Ltd
       location: Bristol
       job: Senior Software Engineer
-      date: July 2011 – Present
+      date: July 2011 - Present
       points:
         - Work closely with clients to identify user requirements and deliver a positive experience
         - Lead projects to ensure that work is scheduled and delivered to agreed deadlines
@@ -23,19 +23,19 @@ employment:
         - Help train and mentor junior developers within the company
         - Maintain both development and production environments
         - Develop scalable and future proof solutions within budgetary constraints
-        - Example of my work are: Using software as a medicine; Day to day operations on a factory floor; A website for a professional body & An e-learning platform
+        - Example of my work are Using software as a medicine; Day to day operations on a factory floor; A website for a professional body & An e-learning platform
 
     - place: BAM Agency Ltd
       location: Cheltenham
       job: Web Developer 
-      date: August 2008 – July 2011
+      date: August 2008 - July 2011
       points:
         - Development and maintenance of BAM's internal web platforms (www.sumarketing.co.uk, www.quotemeprint.com, www.bamuk.com)
         - Development of BAM’s CMS that is used by over 80 student organisations in the UK
         - Provision of technical support for the above platforms 
         - Mentoring and aiding colleagues with PHP / MySQL problems
         - Monitoring and administering both internal and external servers 
-        - Management and optimisation of the company’s MySQL Databases
+        - Management and optimisation of the company's MySQL Databases
         - Provision of development time frames from client briefs
         - Co-ordinating closely with all departments to meet project deadlines
         - Training of clients and company employees on our portfolio of web platforms
@@ -46,31 +46,31 @@ employment:
     - place: D Sidoli & Sons Ltd
       location: Welshpool
       job: Various Roles
-      date: June 2006 – July 2008   
+      date: June 2006 - July 2008   
       points:
         - Various roles that included; Sales & Marketing Coordinator, Cold-store & Distribution Administrator, Purchasing Assistant 
         - In addition, my assignment was to troubleshoot, streamline and digitise the departments that I was working within
         - Creation of KPI reports from data stored in the factory AS/400 system
         - Creation of a service schedule and a reporting system for the Maintenance Department
-        - Completion of a full feasibility report on replacing the company’s IT infrastructure with ERP (Enterprise Resource Planning) system to increase company efficiency 
+        - Completion of a full feasibility report on replacing the company's IT infrastructure with ERP (Enterprise Resource Planning) system to increase company efficiency 
 
     - place: Proactive Personnel
       location: Shrewsbury
       job: Agency Worker
-      date: June 2003 – June 2006
+      date: June 2003 - June 2006
       points:
         - Worked in various roles as Agency Staff
 
 education: 
     - place: University of Birmingham
       location: Birmingham
-      date: September 2003 – June 2005
+      date: September 2003 - June 2005
       type: Degree
       course: BSc Artificial Intelligence & Computer Science - Incomplete
 
     - place: Ellesmere College
       location: Ellesmere
-      date: September 1993 – June 2003
+      date: September 1993 - June 2003
       type: A-Levels
       course: 3 A-Levels (Maths, Physics, IT), 1 AS Level (Business Studies)
 
