@@ -106,3 +106,6 @@
         color: #FFF; }
       .window .container .terminal span.output {
         color: #BBB; }
+
+.gist .line-data {
+  width: 100%; }

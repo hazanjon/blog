@@ -61,12 +61,9 @@ You dont really need 4005 unless you are planning to use the server to host West
 During the setup I ran into a few problems, I've tried to document my solutions below.
 
 ### Failed to join game
-Problem
 
 When trying to create a new game the process hangs at the cathedral door followed by the message 'Failed to join game'
 The problem is that the D2 client is unable to connect to the game server. 
-
-Fix
 
 This can be broken down into a few possible fixes:
 
@@ -98,19 +95,13 @@ Marvel in your own awesomeness.
 
 
 ### No realms are available right now
-Problem
 
 The message "No realms available right now" is displayed after you log into Battle.net
 
-Fix
-
 This meants you havent correctly setup a realm in the realm.conf file (/usr/local/etc/realm.conf), double check the example in the file.
 
-### Diablo II was unable to connect to the realm server
--To Add-
 
 ### Only users inside / outside the network running the realm can connect
-Fix
 
 This caused me a fair few headaches. Firstly you have to play with address_translation.conf to make sure you are giving the correct ip addresses to each of the clients, I found the best way to check this is to watch d2cs.log as users try to connect.
 
