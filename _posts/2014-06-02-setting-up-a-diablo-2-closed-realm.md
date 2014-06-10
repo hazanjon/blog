@@ -5,7 +5,7 @@ date:   2014-06-02 00:00:00
 categories: 
 ---
 
-Diablo 2, in my opinion one of the best games ever made. It was released in 2000 and to this day it still has the power to keep me playing for hours.
+Diablo 2, in my opinion, is one of the best games ever made. It was released in 2000 and to this day it still has the power to keep me playing for hours.
 
 Thankfully even though its been 14 years Blizard still maintains the realm servers to allow online play, and they are still packed with players, which is a rarety as most online enabled games last only till their successor is released.
 
@@ -70,13 +70,13 @@ Fix
 
 This can be broken down into a few possible fixes:
 
-1) Address Translation - The realm server (D2CS) did not provide the client with the correct IP to connect to. Check your d2cs.log file and make sure that the correct IP is being sent,if not you need to edit the address_translation.conf file.
+1. Address Translation - The realm server (D2CS) did not provide the client with the correct IP to connect to. Check your d2cs.log file and make sure that the correct IP is being sent,if not you need to edit the address_translation.conf file.
 
-2) Port Forwarding - Check port 4000 is forwarding correctly to the game server and not to the realm server.
+2. Port Forwarding - Check port 4000 is forwarding correctly to the game server and not to the realm server.
 
-3) Firewall - Make sure your Windows machine running D2GS isnt firewalling the connections
+3. Firewall - Make sure your Windows machine running D2GS isnt firewalling the connections
 
-4) D2GS Not Running - Make sure your D2GS service is running correctly. If it shows as started then check the D2GSSVC.log file in the D2GS folder for any errors. The one that always catches me out is covered seperately below.
+4. D2GS Not Running - Make sure your D2GS service is running correctly. If it shows as started then check the D2GSSVC.log file in the D2GS folder for any errors. The one that always catches me out is covered seperately below.
 
 ### D2GS not running
 This is caused by running D2GS on a 64 bit system, you need to change the location of the registry settings as per this forum post: [http://forums.pvpgn.org/index.php?topic=1326.0](http://forums.pvpgn.org/index.php?topic=1326.0)
